@@ -1,0 +1,86 @@
+@keyframes test {
+    0% {
+        opacity: 0;
+        padding-left: 80vw;
+
+    }
+    100% { 
+        padding-left: 2vw;
+        opacity: 1; 
+    }
+ }
+@keyframes fadeinpic {
+    0%{
+        opacity: 0;
+
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+.header{
+    
+    display: flex;
+    justify-content: right;
+}
+.logo{
+    padding-right: 83vw;
+    padding-left: 1vw;
+    width: 5vw;
+}
+.login{
+    padding-left: 5vw;
+    padding-right: 1vw;
+    width: 5vw;
+}
+.pictures{
+    display: flex;
+    animation-iteration-count: infinite;
+}
+
+.welcome{
+    padding-left: 2vw;
+    animation-name: test;
+    animation-duration: 2s;
+    font-size: xx-large;
+}
+
+.desc-para{
+    display: flex;
+    
+}
+
+.txtcontainer{
+    width: 48vw;
+    height: auto;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.txt{
+    /* height: 200px; */
+    text-align: center; 
+
+}
+.picholder{
+    width: 48vw;
+    height: auto;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    
+}
+.pic{
+    width: 48vw;
+    animation-name: fadeinpic;
+    animation-duration: 2s;
+}
+
+.tst{
+    font-style: normal;
+}
+.tst:hover{
+    font-style: italic;
+}
