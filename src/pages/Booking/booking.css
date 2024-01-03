@@ -55,28 +55,44 @@ body{
 .bookingbox{
     display: flex;
     width: 45vw;
-    height: 35vh;
+    height: 30vh;
     background-color: aliceblue;
     z-index: 2;
     position: relative;
     border-radius: 25px;
 }
 
+.locheader{
+    margin: 0;
+}
+
+
 .locationselector{
     /* border-right: 1px solid black;
       margin-left: 0px;  */
       width: 11vw;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .checkin{ 
     /* border-right: 1px solid black; 
     margin-left: 0px;  */
     width: 11vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .checkout{ 
     width: 11vw;
-
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-right: 1px solid black; /* Adjust color and thickness as needed */
     margin-left: 0px; /* Adjust margin as needed */
 }
