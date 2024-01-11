@@ -7,15 +7,13 @@ import DropUp from '../../Resources/icons/arrow_drop_up.svg'
 // import Navigation from './Navigation';
 function Book() {
 
-    var curdate = new Date;
+    var curdate = new Date();
     const [checkindat, setcheckindat] = useState(curdate.getFullYear()+"-"+(curdate.getMonth()+1)+"-"+curdate.getDate());
     const [checkoutdat, setcheckoutdat] = useState(curdate.getFullYear()+"-"+(curdate.getMonth()+1)+"-"+(curdate.getDate()+1));
     const [location, setlocation] = useState("select ");
     // alert(checkindat);
 
-    function chgdroparrow(){
-
-    }
+  
 
     function chcheckin(event){
         
