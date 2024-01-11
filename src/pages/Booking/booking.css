@@ -1,6 +1,27 @@
+@font-face {
+    font-family: Salsa;
+    src: url(../../Resources/Fonts/Salsa-Regular.ttf);
+  }
+  
+
 body{
     margin: 0;
+    font-family: Salsa;
 }
+
+.loc_option {
+    display: none;
+  }
+
+
+  .loc_option {
+    display: none;
+  }
+
+  .locbutton:hover .loc_option {
+    display: block;
+    position: absolute;
+  }
 
 .header{
     
@@ -22,6 +43,8 @@ body{
     justify-content: center;
     align-items: center;
     z-index: 1;
+    height: 4vh;
+
 }
 
 
@@ -33,6 +56,7 @@ body{
     justify-content: center;
     align-items: center;
     z-index: 1;
+    height: 4vh;
 }
 
 .bckimg{
@@ -87,6 +111,11 @@ body{
     flex-direction: column;
 }
 
+.checkinheader{
+    margin: 0;
+}
+
+
 .checkout{ 
     width: 11vw;
     flex-direction: column;
@@ -95,4 +124,64 @@ body{
     align-items: center;
     border-right: 1px solid black; /* Adjust color and thickness as needed */
     margin-left: 0px; /* Adjust margin as needed */
+}
+
+.submit_button{
+    width: 11vw;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkoutheader{
+    margin: 0;
+}
+
+.dropdown{
+    display: block;
+    background-color: transparent;
+
+}
+.locbutton:hover .dropdown{
+    display: none;
+
+}
+
+
+
+.locbutton:hover .dropup{
+    display: block;
+
+}
+.dropup{
+    display: none;
+
+}
+.display{
+    display: flex;
+}
+
+.Tuticorin{
+    border: 1.2px solid rgb(23, 131, 254) ;
+    border-radius: 3px;
+}
+
+.Coimbatore{
+    border: 1.2px solid rgb(23, 131, 254) ;
+    border-radius: 3px;
+}
+.Chennai{
+    border: 1.2px solid rgb(23, 131, 254) ;
+    border-radius: 3px;
+}
+
+.Tuticorin:hover{
+    background-color: rgb(191, 243, 247);
+}
+.Coimbatore:hover{
+    background-color: rgb(191, 243, 247);
+}
+.Chennai:hover{
+    background-color: rgb(191, 243, 247);
 }

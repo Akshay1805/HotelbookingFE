@@ -1,14 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../Login/login.css'
 import Introvid from '../../Resources/videos/Hotel-Intro-Video.mp4';
 
 function Login() {
+  const [username, setusername] = useState('');
+  const [pass, setpass] = useState('');
+
+  function userchange(event){
+    setusername(event.target.value);
+
+  }
+  function passchange(event){   
+    setpass(event.target.value);
+  }
+
+  function onsubmit(){
+    
+    alert(username+" "+pass);
+  }
      return (
-        
-          
-        
-        
-        
         <div className="page">
         
           <video autoPlay muted loop>
@@ -33,18 +43,18 @@ function Login() {
         
             </div>
           <div className="loginbox">
-            <form className="Login">
+            <form className="Login" id='Login'>
               <div className="usernameform">
                 
-                <input type="text" className="username" id="username" placeholder="Username"/>
+                <input type="text" className="username" id="username" placeholder="Username" value={username} onChange={userchange}/>
               </div>
             
               <div className="passform">
                 
-                <input type="text" className="pass" id="pass" placeholder="Password"/>
+                <input type="text" className="pass" id="pass" placeholder="Password" value={pass} onChange={passchange}/>
               </div>
               <div className="submitbutton">
-                <input type="submit" className="subbutton"/>
+                <input type="submit" className="subbutton" onClick={onsubmit}/>
               </div>
             </form>
           </div>
